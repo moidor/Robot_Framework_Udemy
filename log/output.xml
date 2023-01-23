@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.0 on win32)" generated="20230116 16:26:37.673" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo2" source="C:\Users\cham.zein\PycharmProjects\Robot_Framework_Udemy\Tests\Demo2.robot">
+<test id="s1-t1" name="Select the form and navigate to Child window" line="26">
+<kw name="Open the browser with the Mortgage payment url" library="Resource" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=C:/Users/cham.zein/Documents/chromedriver_win32/chromedriver.exe</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230116 16:26:38.343" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230116 16:26:38.341" endtime="20230116 16:26:39.559"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230116 16:26:39.567" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<status status="PASS" starttime="20230116 16:26:39.562" endtime="20230116 16:26:40.317"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230116 16:26:40.318" endtime="20230116 16:26:40.436"/>
+</kw>
+<status status="PASS" starttime="20230116 16:26:38.339" endtime="20230116 16:26:40.437"/>
+</kw>
+<kw name="Fill the login details and select the user option">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230116 16:26:40.442" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230116 16:26:40.439" endtime="20230116 16:26:40.546"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>learning</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230116 16:26:40.549" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20230116 16:26:40.589" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230116 16:26:40.634" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230116 16:26:40.547" endtime="20230116 16:26:40.634"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:input[value='user']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 16:26:40.637" level="INFO">Clicking element 'css:input[value='user']'.</msg>
+<status status="PASS" starttime="20230116 16:26:40.635" endtime="20230116 16:26:40.705"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 16:26:40.706" endtime="20230116 16:26:40.958"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:okayBtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 16:26:40.961" level="INFO">Clicking element 'id:okayBtn'.</msg>
+<status status="PASS" starttime="20230116 16:26:40.959" endtime="20230116 16:26:41.001"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:okayBtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 16:26:41.003" level="INFO">Clicking element 'id:okayBtn'.</msg>
+<status status="PASS" starttime="20230116 16:26:41.001" endtime="20230116 16:26:41.037"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230116 16:26:41.037" endtime="20230116 16:26:41.285"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>css:select.form-control</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230116 16:26:41.289" level="INFO">Selecting options from selection list 'css:select.form-control' by value teach.</msg>
+<status status="PASS" starttime="20230116 16:26:41.286" endtime="20230116 16:26:41.367"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230116 16:26:41.370" level="INFO">Selecting checkbox 'terms'.</msg>
+<status status="PASS" starttime="20230116 16:26:41.368" endtime="20230116 16:26:41.449"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>terms</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20230116 16:27:12.010" level="INFO">Verifying checkbox 'terms' is selected.</msg>
+<status status="PASS" starttime="20230116 16:26:41.450" endtime="20230116 16:27:12.030"/>
+</kw>
+<status status="PASS" starttime="20230116 16:26:40.438" endtime="20230116 16:27:12.031"/>
+</kw>
+<kw name="Close Browser session" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230116 16:27:13.952" endtime="20230116 16:27:31.285"/>
+</kw>
+<status status="PASS" starttime="20230116 16:27:12.032" endtime="20230116 16:27:31.287"/>
+</kw>
+<status status="PASS" starttime="20230116 16:26:38.335" endtime="20230116 16:27:31.289"/>
+</test>
+<doc>To validate the login form</doc>
+<status status="PASS" starttime="20230116 16:26:37.681" endtime="20230116 16:27:31.294"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo2">Demo2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
